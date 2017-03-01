@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace egami
 {
-    public partial class Form1 : Form
+    public partial class ImageForm : Form
     {
-        public Form1()
+        public ImageForm()
         {
             InitializeComponent();
         }

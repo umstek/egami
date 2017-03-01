@@ -1,6 +1,6 @@
 ﻿namespace egami
 {
-    partial class Form1
+    partial class ImageForm
     {
         /// <summary>
         /// Required designer variable.
