@@ -106,6 +106,7 @@
             this.buttonApply.TabIndex = 5;
             this.buttonApply.Text = "&apply";
             this.buttonApply.UseVisualStyleBackColor = true;
+            this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
             // 
             // buttonCancel
             // 
@@ -128,6 +129,7 @@
             this.radioButtonScale2.TabStop = true;
             this.radioButtonScale2.Text = "Scale by a power of 2";
             this.radioButtonScale2.UseVisualStyleBackColor = true;
+            this.radioButtonScale2.CheckedChanged += new System.EventHandler(this.radioButtonScale2_CheckedChanged);
             // 
             // trackBarScale2
             // 
@@ -151,6 +153,7 @@
             this.radioButtonScale.TabStop = true;
             this.radioButtonScale.Text = "Scale by a custom factor";
             this.radioButtonScale.UseVisualStyleBackColor = true;
+            this.radioButtonScale.CheckedChanged += new System.EventHandler(this.radioButtonScale_CheckedChanged);
             // 
             // groupBoxScale
             // 

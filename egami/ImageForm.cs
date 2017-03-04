@@ -12,7 +12,10 @@ namespace egami
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
+        }
 
+        private void ImageForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

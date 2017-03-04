@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 using egami.Properties;
 
@@ -108,7 +110,14 @@ namespace egami
 
         private void resizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ResizeForm().ShowDialog();
+            var resizeForm = new ResizeForm {Tag = ((ImageForm) ActiveMdiChild)?.pictureBox.Image};
+            if (resizeForm.ShowDialog() != DialogResult.OK) return;
+            Debug.Assert(ActiveMdiChild != null, "ActiveMdiChild != null");
+            ((ImageForm) ActiveMdiChild).pictureBox.Image = (Image) resizeForm.Tag;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

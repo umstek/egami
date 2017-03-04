@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace egami
@@ -15,6 +9,22 @@ namespace egami
         public ResizeForm()
         {
             InitializeComponent();
+        }
+
+        private void radioButtonScale2_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBoxScale.Enabled = !(trackBarScale2.Enabled = radioButtonScale2.Checked);
+        }
+
+        private void radioButtonScale_CheckedChanged(object sender, EventArgs e)
+        {
+            trackBarScale2.Enabled = !(groupBoxScale.Enabled = radioButtonScale.Checked);
+        }
+
+        private void buttonApply_Click(object sender, EventArgs e)
+        {
+            Tag = Resizer.Resize2((Image) Tag, (sbyte) trackBarScale2.Value);
+            DialogResult = DialogResult.OK;
         }
     }
 }
