@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="SupportedFileTypesFilter" xml:space="preserve">
-    <value>Image Files (*.jpg;*.jpe;*.jpeg;*.png;*.bmp;*.wmf;*.gif)|*.jpg;*.jpe;*.jpeg;*.png;*.bmp;*.wmf;*.gif|All Files (*.*)|*.*</value>
-  </data>
 </root>
